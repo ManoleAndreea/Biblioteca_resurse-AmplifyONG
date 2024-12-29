@@ -1,0 +1,83 @@
+h1 {
+  font-weight: 900;
+  font-size: 70px;
+  position: relative;
+  text-align: center;
+  margin: 35px 0;
+  
+  /* Text fill and stroke */
+  color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+
+  -webkit-text-stroke: 2px #91bac7;
+  
+  /* Create wave effect inside the text */
+  background-image: linear-gradient(
+    45deg, 
+    #3cf5 0%, 
+    #3cf5 50%, 
+    transparent 50%, 
+    transparent 100%
+  );
+  background-size: 200% 200%;
+  animation: waveText 10s linear infinite;
+}
+
+/* Pseudo-elements for additional wave effect */
+h1:before, h1:after {
+  content: attr(data-text);
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  color: transparent;
+  background-image: linear-gradient(
+    -45deg, 
+    #3cf5 0%, 
+    #3cf5 50%, 
+    transparent 50%, 
+    transparent 100%
+  );
+  background-size: 200% 200%;
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+
+h1:before {
+  animation: waveText 10s linear infinite;
+}
+
+h1:after {
+  animation: waveText 8s linear infinite;
+  animation-delay: -4s;
+}
+
+@keyframes waveText {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+/* Ensure a white background for the entire page */
+body {
+  background-color: white;
+}
+
+/* Mobile header styling */
+.mobile-header h1 {
+  color: black;
+  font-size: 40px;
+  background-image: none;
+}
+
+.mobile-header h1:before,
+.mobile-header h1:after {
+  display: none;
+}

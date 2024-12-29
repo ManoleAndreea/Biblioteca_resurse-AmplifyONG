@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>AmpliFY ONG - Biblioteca Resurselor</title>
+    <link rel="stylesheet" href="css/navbar.css">
+    <link rel="stylesheet" href="css/contact.css">
+    <link rel="stylesheet" href="css/background.css">
+    <link rel="stylesheet" href="css/heading_wave.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <nav class="navbar" id="navbar">
+        <a href="index.html" id="logo">
+            <img class="logo-image" src="css/photos/logo.webp" alt="Logo">
+        </a>
+
+        <div class="menu-links">
+            <a href="index.html">Home</a>
+            <a href="biblioteca.html">Biblioteca</a>
+            <a href="domenii.html">Domenii de interes</a>
+            <a class="active" href="contact.html">Contact</a>
+        </div>
+    </nav>
+
+    <script src="js/navbar.js"></script>
+
+    <h1>Formular de contact </h1>
+
+    <div class="container">
+        <form action="mailto:amplify@mail.com" method="get" autocomplete="on">
+            <label for="nume">Nume:</label>
+            <input type="text" id="nume" name="nume" placeholder="Introduceti numele.." required>
+
+            <label for="prenume">Prenume:</label>
+            <input type="text" id="prenume" name="prenume" placeholder="Introduceti prenumele.." required>
+    
+	        <label for="email">Email:</label>
+            <input type="text" id="email" name="email" placeholder="Introduceti adresa de email.." required>
+    
+            <label for="tara">Tara:</label>
+            <select id="tara" name="tara">
+                <option value="romania">Romania</option>
+                <option value="uanglia">Anglia</option>
+                <option value="sua">SUA</option>
+                <option value="altele">Altele...</option>
+            </select>
+
+            <label for="subiect">Subiect</label>
+            <textarea id="subiect" name="subiect" placeholder="Scrie ceva.." style="height:200px"></textarea>
+
+        <input type="submit" value="Submit">
+        <input type="reset" value="Reset">
+        </form>
+    </div>
+
+    <iframe src="footer.html" style="width: 100%; border: none;" height="160"></iframe>
+
+</body>
+</html>

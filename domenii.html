@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AmplyONG - Domeniile Noastre de Interes</title>
+    <link rel="stylesheet" href="css/domenii.css">
+    <link rel="stylesheet" href="css/navbar.css">
+    <link rel="stylesheet" href="css/heading_wave.css">
+    <link rel="stylesheet" href="css/background.css">
+</head>
+<body>
+    <nav class="navbar" id="navbar">
+        <a href="index.html" id="logo">
+            <img class="logo-image" src="css/photos/logo.webp" alt="Logo">
+        </a>
+
+        <div class="burger-menu" id="burger-menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+
+        <div class="menu-links" id="menu-links">
+            <a href="index.html">Home</a>
+            <a href="biblioteca.html">Biblioteca</a>
+            <a class="active" href="domenii.html">Domenii de interes</a>
+            <a href="contact.html">Contact</a>
+        </div>
+    </nav>
+    <script src="js/navbar.js"></script>
+
+    <div class="container">
+        <h1 style="text-align: center; font-size: 70px;margin: 35px">Domenii de Interes</h1>
+        <div class="domain" id="fundraising">
+            <div class="domain-content">
+                <h2>Fundraising</h2>
+                <p>Fundraising-ul reprezintă procesul strategic de colectare de resurse financiare și materiale pentru susținerea misiunii și obiectivelor unei organizații nonprofit. Este arta de a convinge donatori, companii și instituții să sprijine cauze sociale prin contribuții financiare sau alte forme de suport.</p>
+                <p>Scopul principal este de a genera fonduri necesare pentru implementarea proiectelor sociale, susținerea programelor comunitare și realizarea misiunii organizației.</p>
+            </div>
+            <div class="domain-image">
+                <img src="css/photos/fundraising.jpg" alt="Fundraising" />
+            </div>
+        </div>
+
+        <div class="domain" id="scriere-proiecte">
+            <div class="domain-content">
+                <h2>Scriere de Proiecte</h2>
+                <p>Scrierea de proiecte este procesul complex de elaborare a documentațiilor detaliate care descriu obiective clare, metodologii de implementare, rezultate așteptate și bugetare pentru inițiativele sociale sau comunitare.</p>
+                <p>Reprezintă abilitatea de a transforma o idee sau o nevoie identificată într-un plan strategic, convingător și fezabil care poate atrage finanțare și susținere din partea diferitelor instituții.</p>
+            </div>
+            <div class="domain-image">
+                <img src="css/photos/scriereproiecte.jpg" alt="Scriere Proiecte" />
+            </div>
+        </div>
+
+        <div class="domain" id="comunicare">
+            <div class="domain-content">
+                <h2>Comunicare</h2>
+                <p>Comunicarea în sectorul nonprofit este arta de a transmite mesaje clare, impactante și autentice către diferite categorii de public: beneficiari, donatori, parteneri, voluntari și comunitate.</p>
+                <p>Urmărește să construiască încredere, să crească vizibilitatea organizației, să inspire acțiune și să creeze punți de legătură între scopurile organizației și nevoile societății.</p>
+            </div>
+            <div class="domain-image">
+                <img src="css/photos/comunicare.jpg" alt="Comunicare" />
+            </div>
+        </div>
+
+        <div class="domain" id="management-echipa">
+            <div class="domain-content">
+                <h2>Managementul Echipei</h2>
+                <p>Managementul echipei în organizațiile nonprofit înseamnă coordonarea, motivarea și dezvoltarea resurselor umane pentru a atinge obiectivele sociale propuse.</p>
+                <p>Presupune crearea unui mediu care încurajează colaborarea, inovația, creșterea profesională și menținerea unui spirit motivant și dedicat misiunii organizației.</p>
+            </div>
+            <div class="domain-image">
+                <img src="css/photos/management.jpg" alt="Management Echipă" />
+            </div>
+        </div>
+
+        <div id="quiz-section">
+            <h2>Testează-ți Cunoștințele</h2>
+            <p>Alege un domeniu pentru a trece un mini-test și afla nivelul tău de cunoștințe!</p>
+
+            <div id="domain-selection">
+                <h3>Alege domeniul de interes:</h3>
+                <div class="domains">
+                    <button class="domain-btn" data-domain="fundraising">Fundraising</button>
+                    <button class="domain-btn" data-domain="proiecte">Scriere Proiecte</button>
+                    <button class="domain-btn" data-domain="comunicare">Comunicare</button>
+                    <button class="domain-btn" data-domain="management">Management Echipă</button>
+                </div>
+            </div>
+
+            <div id="quiz-container" class="hidden">
+                <div id="quiz-content"></div>
+                <button id="submit-btn" class="hidden">Trimite Răspunsuri</button>
+            </div>
+
+            <div id="result-container" class="hidden">
+                <h2>Rezultatul Tău</h2>
+                <p id="level-result"></p>
+                <a id="resources-link" href="#" class="btn">Resurse Recomandate</a>
+            </div>
+        </div>
+    </div>
+    <script src="js/domenii.js"></script>
+
+    <iframe src="footer.html" style="width: 100%; border: none;" height="160"></iframe>
+
+</body>
+</html>

@@ -1,0 +1,184 @@
+/* Global Reset and Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    line-height: 1.6;
+    background-color: #f4f7f6;
+    color: #333;
+}
+
+
+
+
+
+
+.main-header::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+}
+
+.header-content {
+    position: relative;
+    z-index: 2;
+}
+
+.header-actions {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 12px 25px;
+    text-decoration: none;
+    border-radius: 30px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.btn-primary {
+    background-color: #ffffff;
+    color: #2575fc;
+    border: 2px solid #ffffff;
+}
+
+.btn-secondary {
+    background-color: transparent;
+    color: #ffffff;
+    border: 2px solid #ffffff;
+}
+
+.btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+/* Home Content */
+.home-content {
+    max-width: 1100px;
+    margin: 40px auto;
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+    padding: 40px;
+}
+
+/* Sections */
+.section-header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.section-header h2 {
+    color: #2575fc;
+    font-size: 2rem;
+    padding: 10px;
+    position: relative;
+    display: inline-block;
+}
+
+.section-header h2::after {
+    content: '';
+    position: absolute;
+    width: 60%;
+    height: 3px;
+    background-color: #2575fc;
+    bottom: 5px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.welcome-section,
+.mission-section {
+    margin-bottom: 40px;
+    padding: 20px;
+    background-color: #f9f9fc;
+    border-radius: 10px;
+}
+
+/* Carousel */
+.carousel {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+
+.carousel-inner {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+.carousel-item {
+    min-width: 100%;
+    position: relative;
+}
+
+.carousel-item img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+}
+
+.carousel-caption {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    background: rgba(0,0,0,0.5);
+    color: white;
+    padding: 10px 20px;
+    border-radius: 10px;
+}
+
+/* Mission Section */
+.mission-details ul {
+    list-style-type: none;
+    text-align: center;
+}
+
+.mission-details ul li {
+    margin-bottom: 15px;
+    position: relative;
+    padding-left: 30px;
+}
+
+.mission-details ul li::before {
+    content: '✓';
+    position: absolute;
+    left: 0;
+    color: #2575fc;
+    font-weight: bold;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .main-header h1 {
+        font-size: 2rem;
+    }
+
+    .header-actions {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .menu-links {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .home-content {
+        padding: 20px;
+        margin: 20px 10px;
+    }
+}

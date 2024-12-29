@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/login.css">
+    <link rel="stylesheet" href="css/background.css">
+    <title>Autentificare și Interese</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Autentificare</h1>
+        <form>
+            <label for="nume">Nume:</label>
+            <input type="text" id="nume" name="nume" placeholder="Introduceti numele" required>
+
+            <label for="prenume">Prenume:</label>
+            <input type="text" id="prenume" name="prenume" placeholder="Introduceti prenumele" required>
+
+            <label for="email">Adresă de email:</label>
+            <input type="text" id="email" name="email" placeholder="Introduceti adresa de email" required>
+
+            <label for="password">Parolă:</label>
+            <input type="text" id="password" name="password" placeholder="Introduceti parola" required>
+
+            <div class="interests">
+                <h2>Interese</h2>
+                <div class="interest">
+                    <input type="checkbox" id="fundraising" name="interest" value="fundraising">
+                    <label for="fundraising">Fundraising</label>
+                </div>
+                <div class="interest">
+                    <input type="checkbox" id="project-writing" name="interest" value="project-writing">
+                    <label for="project-writing">Scriere de proiecte</label>
+                </div>
+                <div class="interest">
+                    <input type="checkbox" id="communication" name="interest" value="communication">
+                    <label for="communication">Comunicare</label>
+                </div>
+                <div class="interest">
+                    <input type="checkbox" id="team-management" name="interest" value="team-management">
+                    <label for="team-management">Managementul echipei</label>
+                </div>
+            </div>
+
+            <button type="submit">Autentificare</button>
+        </form>
+    </div>
+
+    
+</body>
+</html>

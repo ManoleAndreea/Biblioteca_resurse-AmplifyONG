@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amplify ONG - Biblioteca de Resurse AmplyONG</title>
+    <link rel="stylesheet" href="css/biblioteca.css">
+    <link rel="stylesheet" href="css/navbar.css">
+    <link rel="stylesheet" href="css/heading_wave.css">
+    
+    
+</head>
+
+<body>
+  <nav class="navbar" id="navbar">
+        <a href="index.html" id="logo">
+            <img class="logo-image" src="css/photos/logo.webp" alt="Logo">
+        </a>
+
+        <div class="burger-menu" id="burger-menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+
+        <div class="menu-links" id="menu-links">
+            <a href="index.html">Home</a>
+            <a class="active" href="biblioteca.html">Biblioteca</a>
+            <a href="domenii.html">Domenii de interes</a>
+            <a href="contact.html">Contact</a>
+        </div>
+    </nav>
+    
+    <script src="js/navbar.js"></script>
+    <div class="container">
+       
+        <h1 style="text-align: center; font-size: 70px;margin: 35px">Biblioteca</h1>
+
+        <div id="search-container">
+            <input type="text" id="search-input" placeholder="Caută resurse...">
+        </div>
+
+        <div class="filters">
+            <div class="filter-group" id="domain-filters">
+                <button class="filter-btn" data-filter="fundraising">Fundraising</button>
+                <button class="filter-btn" data-filter="management">Management Echipă</button>
+                <button class="filter-btn" data-filter="comunicare">Comunicare</button>
+                <button class="filter-btn" data-filter="proiecte">Scriere Proiecte</button>
+            </div>
+
+            <div class="filter-group" id="level-filters">
+                <button class="filter-btn" data-filter="incepator">Începător</button>
+                <button class="filter-btn" data-filter="intermediar">Intermediar</button>
+                <button class="filter-btn" data-filter="avansat">Avansat</button>
+            </div>
+        </div>
+
+        <div id="resources-grid"></div>
+
+        <div id="no-results" style="display:none;">
+            <h2>Nicio resursă nu a fost găsită</h2>
+            <p>Încearcă alți termeni de căutare sau filtre diferite.</p>
+        </div>
+    </div>
+    <script src="js/biblioteca.js"></script>
+
+    <iframe src="footer.html" style="width: 100%; border: none;" height="160"></iframe>
+
+</body>
+</html>

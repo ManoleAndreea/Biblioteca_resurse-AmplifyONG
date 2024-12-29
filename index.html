@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="ro">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AmpliFY ONG - Biblioteca Resurselor</title>
+
+    <!-- Font Awesome for social icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- CSS Files -->
+    <link rel="stylesheet" href="css/navbar.css" />
+    <link rel="stylesheet" href="css/background.css" />
+    <link rel="stylesheet" href="css/home-content.css" />
+    <link rel="stylesheet" href="css/heading_wave.css" />
+    <link rel="stylesheet" href="css/butoane.css" />
+    <link rel="stylesheet" href="css/login.css" />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar" id="navbar">
+      <a href="index.html" id="logo">
+        <img class="logo-image" src="css/photos/logo.webp" alt="Logo AmpliFY" />
+      </a>
+      <div class="burger-menu" id="burger-menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <div class="menu-links" id="menu-links">
+        <a class="active" href="index.html">Acasă</a>
+        <a href="biblioteca.html">Biblioteca</a>
+        <a href="domenii.html">Domenii de interes</a>
+        <a href="contact.html">Contact</a>
+      </div>
+    </nav>
+
+    <!-- Header Principal -->
+    <header class="main-header">
+      <div class="header-content">
+        <h1>Unim resurse, oameni și viziuni</h1>
+        <div class="header-actions">
+          <div class="button-container">
+            <button
+              onclick="document.getElementById('id01').style.display='block'"
+              style="width: auto"
+            >
+              Login
+            </button>
+          </div>
+          <div id="id01" class="modal">
+            <form
+              class="modal-content animate"
+              action="/action_page.php"
+              method="post"
+            >
+              <div class="container">
+                <h2>Autentificare</h2>
+                <label for="nume">Nume:</label>
+                <input
+                  type="text"
+                  id="nume"
+                  name="nume"
+                  placeholder="Introduceti numele..."
+                  required
+                />
+
+                <label for="prenume">Prenume:</label>
+                <input
+                  type="text"
+                  id="prenume"
+                  name="prenume"
+                  placeholder="Introduceti prenumele..."
+                  required
+                />
+
+                <label for="email">Adresă de email:</label>
+                <input
+                  type="text"
+                  id="email"
+                  name="email"
+                  placeholder="Introduceti adresa de email..."
+                  required
+                />
+
+                <label for="password">Parolă:</label>
+                <input
+                  type="text"
+                  id="password"
+                  name="password"
+                  placeholder="Introduceti parola..."
+                  required
+                />
+
+                <div class="interests">
+                  <h3>Interese</h3>
+                  <div class="interest">
+                    <input
+                      type="checkbox"
+                      id="fundraising"
+                      name="interest"
+                      value="fundraising"
+                    />
+                    <label for="fundraising">Fundraising</label>
+                  </div>
+                  <div class="interest">
+                    <input
+                      type="checkbox"
+                      id="project-writing"
+                      name="interest"
+                      value="project-writing"
+                    />
+                    <label for="project-writing">Scriere de proiecte</label>
+                  </div>
+                  <div class="interest">
+                    <input
+                      type="checkbox"
+                      id="communication"
+                      name="interest"
+                      value="communication"
+                    />
+                    <label for="communication">Comunicare</label>
+                  </div>
+                  <div class="interest">
+                    <input
+                      type="checkbox"
+                      id="team-management"
+                      name="interest"
+                      value="team-management"
+                    />
+                    <label for="team-management">Managementul echipei</label>
+                  </div>
+                </div>
+
+                <button type="submit">Autentificare</button>
+
+                <label>
+                  <input type="checkbox" checked="checked" name="remember" />
+                  Remember me
+                </label>
+              </div>
+
+              <div class="container" style="background-color: #f1f1f1">
+                <button
+                  type="button"
+                  onclick="document.getElementById('id01').style.display='none'"
+                  class="cancelbtn"
+                >
+                  Cancel
+                </button>
+                <span class="psw">Ai uitat <a href="#">parola?</a></span>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- Conținut Principal -->
+    <main class="home-content">
+      <!-- Secțiune de Bun Venit -->
+      <section class="welcome-section" id="about">
+        <div class="section-header">
+          <h2>Cine Suntem</h2>
+          <p class="tagline">Transformăm potențialul tinerilor în realitate</p>
+        </div>
+        <div class="section-content">
+          <p>
+            AmpliFY ONG este o organizație dedicată dezvoltării personale și
+            profesionale a tinerilor prin programe innovative de educație și
+            voluntariat.
+          </p>
+        </div>
+      </section>
+
+      <!-- Secțiune Carousel -->
+      <section class="carousel-section">
+        <div class="section-header">
+          <h2>Proiectele Noastre</h2>
+        </div>
+        <div class="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="css/photos/imag1.jpg" alt="Proiectul Tineretului" />
+              <div class="carousel-caption">
+                <h3>Proiectul Tineretului</h3>
+                <p>Investim în viitorul generației</p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="css/photos/imag2.jpg" alt="Educație și Dezvoltare" />
+              <div class="carousel-caption">
+                <h3>Educație și Dezvoltare</h3>
+                <p>Sprijinim educația non-formală</p>
+              </div>
+            </div>
+          </div>
+          <!-- Adăugat controale pentru carousel -->
+          <a class="carousel-control-prev" href="#" role="button">&#10094;</a>
+          <a class="carousel-control-next" href="#" role="button">&#10095;</a>
+        </div>
+      </section>
+
+      <!-- Secțiune Misiune -->
+      <section class="mission-section">
+        <div class="section-header">
+          <h2>Misiunea Noastră</h2>
+        </div>
+        <div class="mission-details">
+          <ul>
+            <li>Sprijinirea tinerilor în dezvoltarea lor personală</li>
+            <li>Crearea de programe educaționale inovatoare</li>
+            <li>Promovarea voluntariatului și implicării sociale</li>
+          </ul>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <iframe
+      src="footer.html"
+      style="width: 100%; border: none"
+      height="160"
+    ></iframe>
+
+    <!-- JavaScript Files -->
+    <script src="js/navbar.js"></script>
+    <script src="js/login.js"></script>
+    <script src="js/home.js"></script>
+    <script src="js/carousel.js"></script>
+  </body>
+</html>
